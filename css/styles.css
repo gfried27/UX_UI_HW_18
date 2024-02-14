@@ -3,46 +3,36 @@ body {
     display: flex;
     width: 1440px;
     padding: 0px 0px 202px 0px;
-    border: none;
-    margin: none;
+    margin: 0 auto;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 header {
     display: flex;
-    width: 1440px;
-    padding: 40px 72px 0px 72px;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    padding: 40px 2%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo-nav {
     display: flex;
-    width: 1440px;
-    align-items: flex-end;
-    gap: 227px;
+    align-items: center;
+    gap: 2%;
 }
 
 .g-logo {
-    display: flex;
-    padding: 4px 30px;
-    align-items: flex-start;
+    width: 148px;
 }
 
 .nav-frame {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 10px;
+    gap: 2%;
 }
 
 .nav {
-    display: flex;
-    width: 208px;
-    padding: 14px 60px;
-    justify-content: center;
-    align-items: center;
+    padding: 14px 20px;
 }
 
 .nav-frame a {
@@ -56,66 +46,49 @@ header {
 
 #hero {
     height: 690px;
+    position:relative;
 }
 
 .hero-img {
-    display: flex;
-    height: 690px;
-    background: linear-gradient(72deg, rgba(91, 97, 53, 0.35) 49.15%, rgba(91, 97, 53, 0.00) 94.33%), url("../images/unsplash_MMJx78V7xS8.jpg"), no-repeat;
+    object-fit: cover;
     border: none;
-    padding: none;
 }
 
 #profile {
-    display: flex;
-    width: 643px;
-    padding: 40px 36px;
-    justify-content: flex-end;
+    padding: 40px 2%;
+    flex-direction: column;
     align-items: flex-start;
-    align-content: flex-start;
-    gap: 40px 30px;
-    flex-wrap: wrap;
     position: absolute;
-    right: 398px;
-    top: 88px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #153F3D;
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15);
 }
 
 .profile-top {
+    max-width: 800px;
     display: flex;
-    width: 569px;
     align-items: flex-start;
-    align-content: flex-start;
-    gap: 40px 35px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
     flex-shrink: 0;
-    border-radius: 200px;
-    background: url("../images/profile_pic.png"), no-repeat;
-    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 100%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.10);
 }
 
 .profile-title {
-    width: 334px;
-    flex-shrink: 0;
+    flex-grow: 1;
 }
 
 .profile-title h1 {
     color: #00AFAA;
     font-family: "Adobe Garamond Pro";
     font-size: 78px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 76px;
     letter-spacing: -0.39px;
-    width: 334px;
-    height: 200px;
     flex-shrink: 0;
 }
 
@@ -123,18 +96,13 @@ header {
     color: #EFF0E7;
     font-family: "Futura PT";
     font-size: 28px;
-    font-style: normal;
     font-weight: 350;
-    line-height: 66px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    width: 334px;
-    height: 200px;
     flex-shrink: 0;
 }
 
 .profile-body {
-    width: 563px;
     flex-shrink: 0;
 }
 
@@ -142,18 +110,15 @@ header {
     color: #F8F8F8;
     font-family: "Adobe Garamond Pro";
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    width: 563px;
     flex-shrink: 0;
 }
 
-#social-button-row {
+.social-button-row {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 190px;
+    justify-content: flex-start;
+    gap: 200px;
 }
 
 .icon-linkedin {
@@ -162,9 +127,7 @@ header {
 
 .profile-buttons {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .profile-button {
@@ -184,33 +147,31 @@ header {
 }
 
 #skills {
-    display: flex;
-    width: 1440px;
-    padding: 90px 72px;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    padding: 90px 2%;
 }
 
-#ux-skills {
+.flexContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 20px;
 }
 
-#ux-skills-ia {
+.skillCard {
+    width: 100%;
+    max-width: 420px;
     display: flex;
-    width: 425px;
-    padding: 40px;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.skill-illustraton-ia {
-    width: 168px;
-    height: 168px;
-    border-radius: 168px;
+.skill-illustraton {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
     border: 4px solid #5B6135;
-    background: url("../images/illustration_IA.png"), lightgray -49.203px 0px / 156.25% 100% no-repeat;
+    object-fit: cover;
 }
