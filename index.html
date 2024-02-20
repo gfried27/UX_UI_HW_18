@@ -10,17 +10,14 @@
 <body>
   <header>
 
-    <div id="logo-nav">
-
+      <div class="logo-nav">
       <img class="g-logo" src="images/G_logo.svg" />
-
-      <nav class="nav-frame">
+      <nav>
         <a class="nav" href="">ABOUT ME</a>
         <a class="nav" href="">SKILLS</a>
         <a class="nav" href="">WORK</a>
         <a class="nav" href="">CONTACT</a>
       </nav>
-
     </div>
 
   </header>
@@ -36,17 +33,17 @@
         <img class="profile-pic" src="images/profile_pic.png" />
 
         <div class="profile-title">
-          <h1>Greg<br />Friedrich</h1>
-          <h2>Visual Design &amp; UI/UX</h2>
+          <h1 class="profile-h1">Greg<br />Friedrich</h1>
+          <h2 class="profile-h2">Visual Design &amp; UI/UX</h2>
         </div>
 
       </div>
 
       <div class="profile-body">
-        <p>Conceptual thinker with a passion for creating intuitive designs that delight. Strategic
+        <p class="profile-p">Conceptual thinker with a passion for creating intuitive designs that delight. Strategic
           and analytical designer who is also instinctive and empathetic.
         </p>
-        <p>
+        <p class="profile-p">
           Certified in UI/UX with extensive experience as a Senior Visual Designer.
         </p>
       </div>
@@ -65,6 +62,7 @@
 
   </section>
 
+  <!-- My Skills section coded using CSS flex -->
   <section id="skills">
 
     <h1>UX SKILLS</h1>
@@ -113,7 +111,44 @@
 
   </section>
 
-  <section id="my-work">
+  <!-- My Work section coded using CSS flex -->
+  <section id="myWork-Grid">
+
+    <h1>MY WORK</h1>
+
+    <div class="project-card">
+      <img class="work-thumb" src="images/Friends.png">
+      <div class="project-details">
+        <h2>Minnesota Valley Refuge Friends</h2>
+        <h3>NON-PROFIT RESPONSIVE WEBSITE REDESIGN</h3>
+        <p>Transformed online presence with more user friendly navigation and engaging content. Helping build awareness of a local treasure and grow it’s reputation as a premier urban refuge.
+        </p>
+        <button>VIEW MORE</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="work-thumb" src="images/Energy.png">
+      <div class="project-details">
+        <h2>U.S. Department of Energy</h2>
+        <h3>FEDERAL AGENCY RESPONSIVE WEBSITE REDESIGN</h3>
+        <p>Clarity, purpose, and interest improved on a previously confusing an inconsistent homepage. Energy’s broad mission and vast informational resources require a well-structured platform.
+        </p>
+        <button>VIEW MORE</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="work-thumb" src="images/Freetime.png">
+      <div class="project-details">
+        <h2>Freetime</h2>
+        <h3>EVENT DISCOVERY MOBILE APP</h3>
+        <p>An app which simplifies local event search allowing users to enjoy and share more experiences in their busy lives. Comprehensive search, personalization, social integrations, and more make Freetime a game changer.
+        </p>
+        <button>VIEW MORE</button>
+      </div>
+
+      <h4>View all projects</h4>
 
   </section>
 
